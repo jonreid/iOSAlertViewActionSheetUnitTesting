@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0865D120174741AC00E583A0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0865D11F174741AC00E583A0 /* UIKit.framework */; };
+		0865D122174741AC00E583A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0865D121174741AC00E583A0 /* Foundation.framework */; };
+		0865D12C174741AC00E583A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0865D12B174741AC00E583A0 /* main.m */; };
+		0865D130174741AC00E583A0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0865D12F174741AC00E583A0 /* AppDelegate.m */; };
+		0865D139174741AC00E583A0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0865D138174741AC00E583A0 /* ViewController.m */; };
+		0865D144174741AC00E583A0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0865D143174741AC00E583A0 /* SenTestingKit.framework */; };
+		0865D145174741AC00E583A0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0865D11F174741AC00E583A0 /* UIKit.framework */; };
+		0865D146174741AC00E583A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0865D121174741AC00E583A0 /* Foundation.framework */; };
+		0865D15B1747433F00E583A0 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0865D15A1747433F00E583A0 /* ViewController.xib */; };
+		0865D162174744EA00E583A0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0865D131174741AC00E583A0 /* Default.png */; };
+		0865D163174744ED00E583A0 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0865D133174741AC00E583A0 /* Default@2x.png */; };
+		0865D164174744F000E583A0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0865D135174741AC00E583A0 /* Default-568h@2x.png */; };
+		0865D1661747455500E583A0 /* ViewControllerTestPlainOCUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0865D1651747455500E583A0 /* ViewControllerTestPlainOCUnit.m */; };
+		0865D193174745AA00E583A0 /* OCHamcrestIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0865D184174745AA00E583A0 /* OCHamcrestIOS.framework */; };
+		0865D1A8174745DB00E583A0 /* JMRMockActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 0865D1A0174745DB00E583A0 /* JMRMockActionSheet.m */; };
+		0865D1A9174745DB00E583A0 /* JMRMockActionSheetVerifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 0865D1A2174745DB00E583A0 /* JMRMockActionSheetVerifier.m */; };
+		0865D1AA174745DB00E583A0 /* JMRMockAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0865D1A4174745DB00E583A0 /* JMRMockAlertView.m */; };
+		0865D1AB174745DB00E583A0 /* JMRMockAlertViewVerifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 0865D1A6174745DB00E583A0 /* JMRMockAlertViewVerifier.m */; };
+		0865D1AE1747D23700E583A0 /* ViewControllerTestWithOCHamcrest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0865D1AD1747D23700E583A0 /* ViewControllerTestWithOCHamcrest.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0865D147174741AC00E583A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0865D114174741AC00E583A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0865D11B174741AC00E583A0;
+			remoteInfo = AlertViewActionSheetExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0865D11C174741AC00E583A0 /* AlertViewActionSheetExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlertViewActionSheetExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0865D11F174741AC00E583A0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0865D121174741AC00E583A0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0865D127174741AC00E583A0 /* AlertViewActionSheetExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AlertViewActionSheetExample-Info.plist"; sourceTree = "<group>"; };
+		0865D12B174741AC00E583A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0865D12E174741AC00E583A0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0865D12F174741AC00E583A0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0865D131174741AC00E583A0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		0865D133174741AC00E583A0 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		0865D135174741AC00E583A0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		0865D137174741AC00E583A0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0865D138174741AC00E583A0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0865D142174741AC00E583A0 /* AlertViewActionSheetExampleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlertViewActionSheetExampleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0865D143174741AC00E583A0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		0865D14B174741AC00E583A0 /* AlertViewActionSheetExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AlertViewActionSheetExampleTests-Info.plist"; sourceTree = "<group>"; };
+		0865D15A1747433F00E583A0 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		0865D1651747455500E583A0 /* ViewControllerTestPlainOCUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerTestPlainOCUnit.m; sourceTree = "<group>"; };
+		0865D182174745AA00E583A0 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		0865D184174745AA00E583A0 /* OCHamcrestIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OCHamcrestIOS.framework; sourceTree = "<group>"; };
+		0865D19F174745DB00E583A0 /* JMRMockActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMRMockActionSheet.h; sourceTree = "<group>"; };
+		0865D1A0174745DB00E583A0 /* JMRMockActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMRMockActionSheet.m; sourceTree = "<group>"; };
+		0865D1A1174745DB00E583A0 /* JMRMockActionSheetVerifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMRMockActionSheetVerifier.h; sourceTree = "<group>"; };
+		0865D1A2174745DB00E583A0 /* JMRMockActionSheetVerifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMRMockActionSheetVerifier.m; sourceTree = "<group>"; };
+		0865D1A3174745DB00E583A0 /* JMRMockAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMRMockAlertView.h; sourceTree = "<group>"; };
+		0865D1A4174745DB00E583A0 /* JMRMockAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMRMockAlertView.m; sourceTree = "<group>"; };
+		0865D1A5174745DB00E583A0 /* JMRMockAlertViewVerifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMRMockAlertViewVerifier.h; sourceTree = "<group>"; };
+		0865D1A6174745DB00E583A0 /* JMRMockAlertViewVerifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMRMockAlertViewVerifier.m; sourceTree = "<group>"; };
+		0865D1A7174745DB00E583A0 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		0865D1AD1747D23700E583A0 /* ViewControllerTestWithOCHamcrest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerTestWithOCHamcrest.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0865D119174741AC00E583A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0865D120174741AC00E583A0 /* UIKit.framework in Frameworks */,
+				0865D122174741AC00E583A0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0865D13E174741AC00E583A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0865D144174741AC00E583A0 /* SenTestingKit.framework in Frameworks */,
+				0865D145174741AC00E583A0 /* UIKit.framework in Frameworks */,
+				0865D146174741AC00E583A0 /* Foundation.framework in Frameworks */,
+				0865D193174745AA00E583A0 /* OCHamcrestIOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0865D113174741AC00E583A0 = {
+			isa = PBXGroup;
+			children = (
+				0865D125174741AC00E583A0 /* AlertViewActionSheetExample */,
+				0865D149174741AC00E583A0 /* AlertViewActionSheetExampleTests */,
+				0865D11E174741AC00E583A0 /* Frameworks */,
+				0865D11D174741AC00E583A0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0865D11D174741AC00E583A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0865D11C174741AC00E583A0 /* AlertViewActionSheetExample.app */,
+				0865D142174741AC00E583A0 /* AlertViewActionSheetExampleTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0865D11E174741AC00E583A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0865D11F174741AC00E583A0 /* UIKit.framework */,
+				0865D121174741AC00E583A0 /* Foundation.framework */,
+				0865D143174741AC00E583A0 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0865D125174741AC00E583A0 /* AlertViewActionSheetExample */ = {
+			isa = PBXGroup;
+			children = (
+				0865D12E174741AC00E583A0 /* AppDelegate.h */,
+				0865D12F174741AC00E583A0 /* AppDelegate.m */,
+				0865D137174741AC00E583A0 /* ViewController.h */,
+				0865D138174741AC00E583A0 /* ViewController.m */,
+				0865D15A1747433F00E583A0 /* ViewController.xib */,
+				0865D126174741AC00E583A0 /* Supporting Files */,
+			);
+			path = AlertViewActionSheetExample;
+			sourceTree = "<group>";
+		};
+		0865D126174741AC00E583A0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0865D127174741AC00E583A0 /* AlertViewActionSheetExample-Info.plist */,
+				0865D12B174741AC00E583A0 /* main.m */,
+				0865D131174741AC00E583A0 /* Default.png */,
+				0865D133174741AC00E583A0 /* Default@2x.png */,
+				0865D135174741AC00E583A0 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0865D149174741AC00E583A0 /* AlertViewActionSheetExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				0865D1651747455500E583A0 /* ViewControllerTestPlainOCUnit.m */,
+				0865D1AD1747D23700E583A0 /* ViewControllerTestWithOCHamcrest.m */,
+				0865D19E174745DB00E583A0 /* TestSupport */,
+				0865D14A174741AC00E583A0 /* Supporting Files */,
+			);
+			path = AlertViewActionSheetExampleTests;
+			sourceTree = "<group>";
+		};
+		0865D14A174741AC00E583A0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0865D167174745AA00E583A0 /* OCHamcrest-2.0.1 */,
+				0865D14B174741AC00E583A0 /* AlertViewActionSheetExampleTests-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0865D167174745AA00E583A0 /* OCHamcrest-2.0.1 */ = {
+			isa = PBXGroup;
+			children = (
+				0865D182174745AA00E583A0 /* LICENSE.txt */,
+				0865D184174745AA00E583A0 /* OCHamcrestIOS.framework */,
+			);
+			name = "OCHamcrest-2.0.1";
+			path = "../../../../../Downloads/OCHamcrest-2.0.1";
+			sourceTree = "<group>";
+		};
+		0865D19E174745DB00E583A0 /* TestSupport */ = {
+			isa = PBXGroup;
+			children = (
+				0865D19F174745DB00E583A0 /* JMRMockActionSheet.h */,
+				0865D1A0174745DB00E583A0 /* JMRMockActionSheet.m */,
+				0865D1A1174745DB00E583A0 /* JMRMockActionSheetVerifier.h */,
+				0865D1A2174745DB00E583A0 /* JMRMockActionSheetVerifier.m */,
+				0865D1A3174745DB00E583A0 /* JMRMockAlertView.h */,
+				0865D1A4174745DB00E583A0 /* JMRMockAlertView.m */,
+				0865D1A5174745DB00E583A0 /* JMRMockAlertViewVerifier.h */,
+				0865D1A6174745DB00E583A0 /* JMRMockAlertViewVerifier.m */,
+				0865D1A7174745DB00E583A0 /* LICENSE.txt */,
+			);
+			name = TestSupport;
+			path = ../../TestSupport;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0865D11B174741AC00E583A0 /* AlertViewActionSheetExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0865D154174741AC00E583A0 /* Build configuration list for PBXNativeTarget "AlertViewActionSheetExample" */;
+			buildPhases = (
+				0865D118174741AC00E583A0 /* Sources */,
+				0865D119174741AC00E583A0 /* Frameworks */,
+				0865D11A174741AC00E583A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlertViewActionSheetExample;
+			productName = AlertViewActionSheetExample;
+			productReference = 0865D11C174741AC00E583A0 /* AlertViewActionSheetExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0865D141174741AC00E583A0 /* AlertViewActionSheetExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0865D157174741AC00E583A0 /* Build configuration list for PBXNativeTarget "AlertViewActionSheetExampleTests" */;
+			buildPhases = (
+				0865D13D174741AC00E583A0 /* Sources */,
+				0865D13E174741AC00E583A0 /* Frameworks */,
+				0865D13F174741AC00E583A0 /* Resources */,
+				0865D140174741AC00E583A0 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0865D148174741AC00E583A0 /* PBXTargetDependency */,
+			);
+			name = AlertViewActionSheetExampleTests;
+			productName = AlertViewActionSheetExampleTests;
+			productReference = 0865D142174741AC00E583A0 /* AlertViewActionSheetExampleTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0865D114174741AC00E583A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Jon Reid";
+			};
+			buildConfigurationList = 0865D117174741AC00E583A0 /* Build configuration list for PBXProject "AlertViewActionSheetExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0865D113174741AC00E583A0;
+			productRefGroup = 0865D11D174741AC00E583A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0865D11B174741AC00E583A0 /* AlertViewActionSheetExample */,
+				0865D141174741AC00E583A0 /* AlertViewActionSheetExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0865D11A174741AC00E583A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0865D15B1747433F00E583A0 /* ViewController.xib in Resources */,
+				0865D162174744EA00E583A0 /* Default.png in Resources */,
+				0865D163174744ED00E583A0 /* Default@2x.png in Resources */,
+				0865D164174744F000E583A0 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0865D13F174741AC00E583A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0865D140174741AC00E583A0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0865D118174741AC00E583A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0865D12C174741AC00E583A0 /* main.m in Sources */,
+				0865D130174741AC00E583A0 /* AppDelegate.m in Sources */,
+				0865D139174741AC00E583A0 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0865D13D174741AC00E583A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0865D1661747455500E583A0 /* ViewControllerTestPlainOCUnit.m in Sources */,
+				0865D1A8174745DB00E583A0 /* JMRMockActionSheet.m in Sources */,
+				0865D1A9174745DB00E583A0 /* JMRMockActionSheetVerifier.m in Sources */,
+				0865D1AA174745DB00E583A0 /* JMRMockAlertView.m in Sources */,
+				0865D1AB174745DB00E583A0 /* JMRMockAlertViewVerifier.m in Sources */,
+				0865D1AE1747D23700E583A0 /* ViewControllerTestWithOCHamcrest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0865D148174741AC00E583A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0865D11B174741AC00E583A0 /* AlertViewActionSheetExample */;
+			targetProxy = 0865D147174741AC00E583A0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0865D152174741AC00E583A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0865D153174741AC00E583A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0865D155174741AC00E583A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "AlertViewActionSheetExample/AlertViewActionSheetExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0865D156174741AC00E583A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "AlertViewActionSheetExample/AlertViewActionSheetExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0865D158174741AC00E583A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AlertViewActionSheetExample.app/AlertViewActionSheetExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"\"$(SRCROOT)/../../../../Downloads/OCHamcrest-2.0.1\"",
+				);
+				INFOPLIST_FILE = "AlertViewActionSheetExampleTests/AlertViewActionSheetExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		0865D159174741AC00E583A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AlertViewActionSheetExample.app/AlertViewActionSheetExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"\"$(SRCROOT)/../../../../Downloads/OCHamcrest-2.0.1\"",
+				);
+				INFOPLIST_FILE = "AlertViewActionSheetExampleTests/AlertViewActionSheetExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0865D117174741AC00E583A0 /* Build configuration list for PBXProject "AlertViewActionSheetExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0865D152174741AC00E583A0 /* Debug */,
+				0865D153174741AC00E583A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0865D154174741AC00E583A0 /* Build configuration list for PBXNativeTarget "AlertViewActionSheetExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0865D155174741AC00E583A0 /* Debug */,
+				0865D156174741AC00E583A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0865D157174741AC00E583A0 /* Build configuration list for PBXNativeTarget "AlertViewActionSheetExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0865D158174741AC00E583A0 /* Debug */,
+				0865D159174741AC00E583A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0865D114174741AC00E583A0 /* Project object */;
+}
