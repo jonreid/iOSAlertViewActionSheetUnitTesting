@@ -19,7 +19,6 @@
 @property (nonatomic, copy) NSString *destructiveButtonTitle;
 @property (nonatomic, copy) NSArray *otherButtonTitles;
 
-+ (id)verifier;
 - (id)init;
 
 @end

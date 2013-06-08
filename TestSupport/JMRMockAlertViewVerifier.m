@@ -10,11 +10,6 @@
 
 @implementation JMRMockAlertViewVerifier
 
-+ (id)verifier
-{
-    return [[self alloc] init];
-}
-
 - (id)init
 {
     self = [super init];

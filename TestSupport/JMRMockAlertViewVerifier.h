@@ -18,7 +18,6 @@
 @property (nonatomic, copy) NSString *cancelButtonTitle;
 @property (nonatomic, copy) NSArray *otherButtonTitles;
 
-+ (id)verifier;
 - (id)init;
 
 @end

@@ -10,11 +10,6 @@
 
 @implementation JMRMockActionSheetVerifier
 
-+ (id)verifier
-{
-    return [[self alloc] init];
-}
-
 - (id)init
 {
     self = [super init];

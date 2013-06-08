@@ -61,7 +61,7 @@
 {
     // given
     [sut setAlertViewClass:[JMRMockAlertView class]];
-    JMRMockAlertViewVerifier *alertVerifier = [JMRMockAlertViewVerifier verifier];
+    JMRMockAlertViewVerifier *alertVerifier = [[JMRMockAlertViewVerifier alloc] init];
     
     // when
     [sut showAlert:nil];
@@ -109,7 +109,7 @@
 {
     // given
     [sut setActionSheetClass:[JMRMockActionSheet class]];
-    JMRMockActionSheetVerifier *sheetVerifier = [JMRMockActionSheetVerifier verifier];
+    JMRMockActionSheetVerifier *sheetVerifier = [[JMRMockActionSheetVerifier alloc] init];
     
     // when
     [sut showActionSheet:nil];
