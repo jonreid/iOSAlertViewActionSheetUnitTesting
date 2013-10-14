@@ -23,8 +23,8 @@ NSString *const JMRMockActionSheetShowNotification = @"JMRMockActionSheetShowNot
         _otherButtonTitles = [[NSMutableArray alloc] init];
         va_list args;
         va_start(args, otherButtonTitles);
-        for (NSString *title = otherButtonTitles; title != nil; title = va_arg(args, NSString *))
-            [_otherButtonTitles addObject:title];
+        for (NSString *otherTitle = otherButtonTitles; otherTitle != nil; otherTitle = va_arg(args, NSString *))
+            [_otherButtonTitles addObject:otherTitle];
         va_end(args);
     }
     return self;
@@ -32,7 +32,7 @@ NSString *const JMRMockActionSheetShowNotification = @"JMRMockActionSheetShowNot
 
 - (void)showInView:(UIView *)view
 {
-    [self setParentView:view];
+    self.parentView = view;
     [[NSNotificationCenter defaultCenter] postNotificationName:JMRMockActionSheetShowNotification
                                                         object:self
                                                       userInfo:nil];

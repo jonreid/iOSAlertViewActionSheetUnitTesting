@@ -32,11 +32,11 @@
 {
     JMRMockAlertView *alert = [notification object];
 	++_showCount;
-	[self setTitle:[alert title]];
-	[self setMessage:[alert message]];
-	[self setDelegate:[alert delegate]];
-	[self setCancelButtonTitle:[alert cancelButtonTitle]];
-	[self setOtherButtonTitles:[alert otherButtonTitles]];
+	self.title = alert.title;
+	self.message = alert.message;
+	self.delegate = alert.delegate;
+	self.cancelButtonTitle = alert.cancelButtonTitle;
+	self.otherButtonTitles = alert.otherButtonTitles;
 }
 
 @end

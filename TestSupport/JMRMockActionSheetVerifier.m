@@ -32,12 +32,12 @@
 {
     JMRMockActionSheet *alert = [notification object];
 	++_showCount;
-	[self setParentView:[alert parentView]];
-	[self setTitle:[alert title]];
-	[self setDelegate:[alert delegate]];
-	[self setCancelButtonTitle:[alert cancelButtonTitle]];
-	[self setDestructiveButtonTitle:[alert destructiveButtonTitle]];
-    [self setOtherButtonTitles:[alert otherButtonTitles]];
+	self.parentView = alert.parentView;
+	self.title = alert.title;
+	self.delegate = alert.delegate;
+	self.cancelButtonTitle = alert.cancelButtonTitle;
+	self.destructiveButtonTitle = alert.destructiveButtonTitle;
+    self.otherButtonTitles = alert.otherButtonTitles;
 }
 
 @end
