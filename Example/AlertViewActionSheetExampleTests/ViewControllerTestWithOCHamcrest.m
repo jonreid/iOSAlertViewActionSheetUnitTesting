@@ -2,7 +2,7 @@
 #import "ViewController.h"
 
 // Test support
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 #import "JMRMockActionSheet.h"
 #import "JMRMockActionSheetVerifier.h"
 #import "JMRMockAlertView.h"
@@ -12,7 +12,7 @@
 #import <OCHamcrestIOS/OCHamcrestIOS.h>
 
 
-@interface ViewControllerTestWithOCHamcrest : SenTestCase
+@interface ViewControllerTestWithOCHamcrest : XCTestCase
 @end
 
 @implementation ViewControllerTestWithOCHamcrest

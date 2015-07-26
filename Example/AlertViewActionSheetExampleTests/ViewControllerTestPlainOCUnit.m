@@ -2,14 +2,14 @@
 #import "ViewController.h"
 
 // Test support
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 #import "JMRMockActionSheet.h"
 #import "JMRMockActionSheetVerifier.h"
 #import "JMRMockAlertView.h"
 #import "JMRMockAlertViewVerifier.h"
 
 
-@interface ViewControllerTestPlainOCUnit : SenTestCase
+@interface ViewControllerTestPlainOCUnit : XCTestCase
 @end
 
 @implementation ViewControllerTestPlainOCUnit
@@ -34,19 +34,19 @@
 
 - (void)testShowAlertButton_ShouldBeConnected
 {
-    STAssertNotNil([sut showAlertButton], nil);
+    XCTAssertNotNil([sut showAlertButton]);
 }
 
 - (void)testShowAlertButtonAction
 {
     NSArray *actions = [sut.showAlertButton actionsForTarget:sut forControlEvent:UIControlEventTouchUpInside];
-    STAssertEquals([actions count], (NSUInteger)1, nil);
-    STAssertEqualObjects(actions[0], @"showAlert:", nil);
+    XCTAssertEqual([actions count], (NSUInteger)1);
+    XCTAssertEqualObjects(actions[0], @"showAlert:");
 }
 
 - (void)testDefaultAlertViewClass
 {
-    STAssertEqualObjects(sut.alertViewClass, [UIAlertView class], nil);
+    XCTAssertEqualObjects(sut.alertViewClass, [UIAlertView class]);
 }
 
 - (void)testShowAlert
@@ -55,33 +55,33 @@
     JMRMockAlertViewVerifier *alertVerifier = [[JMRMockAlertViewVerifier alloc] init];
     
     [sut showAlert:nil];
-    STAssertEquals(alertVerifier.showCount, (NSUInteger)1, nil);
-    STAssertEqualObjects(alertVerifier.title, @"Get Driving Directions", nil);
-    STAssertEqualObjects(alertVerifier.message, @"Continue to the Maps app for driving directions?", nil);
-    STAssertEquals(alertVerifier.delegate, sut, nil);
+    XCTAssertEqual(alertVerifier.showCount, (NSUInteger)1);
+    XCTAssertEqualObjects(alertVerifier.title, @"Get Driving Directions");
+    XCTAssertEqualObjects(alertVerifier.message, @"Continue to the Maps app for driving directions?");
+    XCTAssertEqual(alertVerifier.delegate, sut);
     NSArray *otherButtonTitles = alertVerifier.otherButtonTitles;
-    STAssertEquals([otherButtonTitles count], (NSUInteger)1, nil);
-    STAssertEqualObjects(otherButtonTitles[0], @"OK", nil);
-    STAssertEqualObjects(alertVerifier.cancelButtonTitle, @"Cancel", nil);
+    XCTAssertEqual([otherButtonTitles count], (NSUInteger)1);
+    XCTAssertEqualObjects(otherButtonTitles[0], @"OK");
+    XCTAssertEqualObjects(alertVerifier.cancelButtonTitle, @"Cancel");
 }
 
 #pragma mark Action Sheet Tests
 
 - (void)testShowActionSheetButton_ShouldBeConnected
 {
-    STAssertNotNil(sut.showActionSheetButton, nil);
+    XCTAssertNotNil(sut.showActionSheetButton);
 }
 
 - (void)testShowActionSheetButtonAction
 {
     NSArray *actions = [(sut.showActionSheetButton) actionsForTarget:sut forControlEvent:UIControlEventTouchUpInside];
-    STAssertEquals([actions count], (NSUInteger)1, nil);
-    STAssertEqualObjects(actions[0], @"showActionSheet:", nil);
+    XCTAssertEqual([actions count], (NSUInteger)1);
+    XCTAssertEqualObjects(actions[0], @"showActionSheet:");
 }
 
 - (void)testDefaultActionSheetClass
 {
-    STAssertEqualObjects(sut.actionSheetClass, [UIActionSheet class], nil);
+    XCTAssertEqualObjects(sut.actionSheetClass, [UIActionSheet class]);
 }
 
 - (void)testShowActionSheet
@@ -90,15 +90,15 @@
     JMRMockActionSheetVerifier *sheetVerifier = [[JMRMockActionSheetVerifier alloc] init];
     
     [sut showActionSheet:nil];
-    STAssertEquals(sheetVerifier.showCount, (NSUInteger)1, nil);
-    STAssertEquals(sheetVerifier.parentView, [sut view], nil);
-    STAssertEqualObjects(sheetVerifier.title, @"http://qualitycoding.org", nil);
-    STAssertEquals(sheetVerifier.delegate, sut, nil);
-    STAssertEqualObjects(sheetVerifier.cancelButtonTitle, @"Cancel", nil);
+    XCTAssertEqual(sheetVerifier.showCount, (NSUInteger)1);
+    XCTAssertEqual(sheetVerifier.parentView, [sut view]);
+    XCTAssertEqualObjects(sheetVerifier.title, @"http://qualitycoding.org");
+    XCTAssertEqual(sheetVerifier.delegate, sut);
+    XCTAssertEqualObjects(sheetVerifier.cancelButtonTitle, @"Cancel");
     NSArray *otherButtonTitles = sheetVerifier.otherButtonTitles;
-    STAssertEquals([otherButtonTitles count], (NSUInteger)2, nil);
-    STAssertEqualObjects(otherButtonTitles[0], @"Open in Safari", nil);
-    STAssertEqualObjects(otherButtonTitles[1], @"Copy link", nil);
+    XCTAssertEqual([otherButtonTitles count], (NSUInteger)2);
+    XCTAssertEqualObjects(otherButtonTitles[0], @"Open in Safari");
+    XCTAssertEqualObjects(otherButtonTitles[1], @"Copy link");
 }
 
 @end

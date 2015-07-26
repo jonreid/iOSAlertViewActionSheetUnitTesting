@@ -12,7 +12,6 @@
 		0865D12C174741AC00E583A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0865D12B174741AC00E583A0 /* main.m */; };
 		0865D130174741AC00E583A0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0865D12F174741AC00E583A0 /* AppDelegate.m */; };
 		0865D139174741AC00E583A0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0865D138174741AC00E583A0 /* ViewController.m */; };
-		0865D144174741AC00E583A0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0865D143174741AC00E583A0 /* SenTestingKit.framework */; };
 		0865D145174741AC00E583A0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0865D11F174741AC00E583A0 /* UIKit.framework */; };
 		0865D146174741AC00E583A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0865D121174741AC00E583A0 /* Foundation.framework */; };
 		0865D15B1747433F00E583A0 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0865D15A1747433F00E583A0 /* ViewController.xib */; };
@@ -52,8 +51,7 @@
 		0865D135174741AC00E583A0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		0865D137174741AC00E583A0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		0865D138174741AC00E583A0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		0865D142174741AC00E583A0 /* AlertViewActionSheetExampleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlertViewActionSheetExampleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0865D143174741AC00E583A0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		0865D142174741AC00E583A0 /* AlertViewActionSheetExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlertViewActionSheetExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0865D14B174741AC00E583A0 /* AlertViewActionSheetExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AlertViewActionSheetExampleTests-Info.plist"; sourceTree = "<group>"; };
 		0865D15A1747433F00E583A0 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		0865D1651747455500E583A0 /* ViewControllerTestPlainOCUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerTestPlainOCUnit.m; sourceTree = "<group>"; };
@@ -85,7 +83,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0865D144174741AC00E583A0 /* SenTestingKit.framework in Frameworks */,
 				0865D145174741AC00E583A0 /* UIKit.framework in Frameworks */,
 				0EEC9C6E1B647B2800C45956 /* OCHamcrestIOS.framework in Frameworks */,
 				0865D146174741AC00E583A0 /* Foundation.framework in Frameworks */,
@@ -109,7 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				0865D11C174741AC00E583A0 /* AlertViewActionSheetExample.app */,
-				0865D142174741AC00E583A0 /* AlertViewActionSheetExampleTests.octest */,
+				0865D142174741AC00E583A0 /* AlertViewActionSheetExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,7 +116,6 @@
 			children = (
 				0865D11F174741AC00E583A0 /* UIKit.framework */,
 				0865D121174741AC00E583A0 /* Foundation.framework */,
-				0865D143174741AC00E583A0 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -231,8 +227,8 @@
 			);
 			name = AlertViewActionSheetExampleTests;
 			productName = AlertViewActionSheetExampleTests;
-			productReference = 0865D142174741AC00E583A0 /* AlertViewActionSheetExampleTests.octest */;
-			productType = "com.apple.product-type.bundle.ocunit-test";
+			productReference = 0865D142174741AC00E583A0 /* AlertViewActionSheetExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -416,11 +412,11 @@
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 					"$(PROJECT_DIR)/AlertViewActionSheetExampleTests/OCHamcrest-4.1.1",
+					"$(inherited)",
 				);
 				INFOPLIST_FILE = "AlertViewActionSheetExampleTests/AlertViewActionSheetExampleTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
@@ -432,11 +428,11 @@
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 					"$(PROJECT_DIR)/AlertViewActionSheetExampleTests/OCHamcrest-4.1.1",
+					"$(inherited)",
 				);
 				INFOPLIST_FILE = "AlertViewActionSheetExampleTests/AlertViewActionSheetExampleTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
