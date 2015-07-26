@@ -57,12 +57,13 @@
     JMRMockAlertViewVerifier *alertVerifier = [[JMRMockAlertViewVerifier alloc] init];
     
     [sut showAlert:nil];
+
     assertThat(@(alertVerifier.showCount), is(equalTo(@1)));
     assertThat(alertVerifier.title, is(@"Get Driving Directions"));
     assertThat(alertVerifier.message, is(@"Continue to the Maps app for driving directions?"));
     assertThat(alertVerifier.delegate, is(sameInstance(sut)));
-    assertThat(alertVerifier.otherButtonTitles, contains(@"OK", nil));
     assertThat(alertVerifier.cancelButtonTitle, is(@"Cancel"));
+    assertThat(alertVerifier.otherButtonTitles, contains(@"OK", nil));
 }
 
 #pragma mark Action Sheet Tests
@@ -89,12 +90,14 @@
     JMRMockActionSheetVerifier *sheetVerifier = [[JMRMockActionSheetVerifier alloc] init];
     
     [sut showActionSheet:nil];
+
     assertThat(@(sheetVerifier.showCount), is(equalTo(@1)));
     assertThat(sheetVerifier.parentView, is(sameInstance([sut view])));
     assertThat(sheetVerifier.title, is(@"http://qualitycoding.org"));;
     assertThat(sheetVerifier.delegate, is(sameInstance(sut)));
     assertThat(sheetVerifier.cancelButtonTitle, is(@"Cancel"));
-    assertThat(sheetVerifier.otherButtonTitles, contains(@"Open in Safari", @"Copy link", @"Separately added button", nil));
+    assertThat(sheetVerifier.otherButtonTitles,
+               contains(@"Open in Safari", @"Copy link", @"Separately added button", nil));
 }
 
 @end

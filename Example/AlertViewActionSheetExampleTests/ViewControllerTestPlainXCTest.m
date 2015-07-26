@@ -40,6 +40,7 @@
 - (void)testShowAlertButtonAction
 {
     NSArray *actions = [sut.showAlertButton actionsForTarget:sut forControlEvent:UIControlEventTouchUpInside];
+
     XCTAssertEqual([actions count], (NSUInteger)1);
     XCTAssertEqualObjects(actions[0], @"showAlert:");
 }
@@ -55,14 +56,15 @@
     JMRMockAlertViewVerifier *alertVerifier = [[JMRMockAlertViewVerifier alloc] init];
     
     [sut showAlert:nil];
+
     XCTAssertEqual(alertVerifier.showCount, (NSUInteger)1);
     XCTAssertEqualObjects(alertVerifier.title, @"Get Driving Directions");
     XCTAssertEqualObjects(alertVerifier.message, @"Continue to the Maps app for driving directions?");
     XCTAssertEqual(alertVerifier.delegate, sut);
     NSArray *otherButtonTitles = alertVerifier.otherButtonTitles;
+    XCTAssertEqualObjects(alertVerifier.cancelButtonTitle, @"Cancel");
     XCTAssertEqual([otherButtonTitles count], (NSUInteger)1);
     XCTAssertEqualObjects(otherButtonTitles[0], @"OK");
-    XCTAssertEqualObjects(alertVerifier.cancelButtonTitle, @"Cancel");
 }
 
 #pragma mark Action Sheet Tests
@@ -75,6 +77,7 @@
 - (void)testShowActionSheetButtonAction
 {
     NSArray *actions = [(sut.showActionSheetButton) actionsForTarget:sut forControlEvent:UIControlEventTouchUpInside];
+
     XCTAssertEqual([actions count], (NSUInteger)1);
     XCTAssertEqualObjects(actions[0], @"showActionSheet:");
 }
@@ -90,6 +93,7 @@
     JMRMockActionSheetVerifier *sheetVerifier = [[JMRMockActionSheetVerifier alloc] init];
     
     [sut showActionSheet:nil];
+
     XCTAssertEqual(sheetVerifier.showCount, (NSUInteger)1);
     XCTAssertEqual(sheetVerifier.parentView, [sut view]);
     XCTAssertEqualObjects(sheetVerifier.title, @"http://qualitycoding.org");
