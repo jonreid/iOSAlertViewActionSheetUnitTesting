@@ -23,6 +23,7 @@ extern NSString *const JMRMockActionSheetShowNotification;
 @property (nonatomic, assign) UIActionSheetStyle actionSheetStyle;
 
 - (id)initWithTitle:(NSString *)title delegate:(id <UIActionSheetDelegate>)delegate cancelButtonTitle:(NSString *)cancelButtonTitle destructiveButtonTitle:(NSString *)destructiveButtonTitle otherButtonTitles:(NSString *)otherButtonTitles, ...NS_REQUIRES_NIL_TERMINATION;
+- (NSInteger)addButtonWithTitle:(NSString *)title;    // returns index of button. 0 based.
 - (void)showInView:(UIView *)view;
 
 @end

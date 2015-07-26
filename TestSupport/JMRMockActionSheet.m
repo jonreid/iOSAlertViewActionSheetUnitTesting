@@ -30,6 +30,12 @@ NSString *const JMRMockActionSheetShowNotification = @"JMRMockActionSheetShowNot
     return self;
 }
 
+- (NSInteger)addButtonWithTitle:(NSString *)title
+{
+    [self.otherButtonTitles addObject:title];
+    return self.otherButtonTitles.count;
+}
+
 - (void)showInView:(UIView *)view
 {
     self.parentView = view;

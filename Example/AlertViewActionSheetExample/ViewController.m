@@ -34,6 +34,7 @@
                                                         cancelButtonTitle:@"Cancel"
                                                    destructiveButtonTitle:nil
                                                         otherButtonTitles:@"Open in Safari", @"Copy link", nil];
+    [actionSheet addButtonWithTitle:@"Separately added button"];
     [actionSheet showInView:[self view]];
 }
 

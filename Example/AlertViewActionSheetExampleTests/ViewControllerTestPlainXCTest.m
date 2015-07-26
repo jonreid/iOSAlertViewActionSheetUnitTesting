@@ -96,9 +96,10 @@
     XCTAssertEqual(sheetVerifier.delegate, sut);
     XCTAssertEqualObjects(sheetVerifier.cancelButtonTitle, @"Cancel");
     NSArray *otherButtonTitles = sheetVerifier.otherButtonTitles;
-    XCTAssertEqual([otherButtonTitles count], (NSUInteger)2);
+    XCTAssertEqual([otherButtonTitles count], (NSUInteger)3);
     XCTAssertEqualObjects(otherButtonTitles[0], @"Open in Safari");
     XCTAssertEqualObjects(otherButtonTitles[1], @"Copy link");
+    XCTAssertEqualObjects(otherButtonTitles[2], @"Separately added button");
 }
 
 @end

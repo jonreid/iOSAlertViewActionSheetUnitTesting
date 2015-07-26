@@ -94,7 +94,7 @@
     assertThat(sheetVerifier.title, is(@"http://qualitycoding.org"));;
     assertThat(sheetVerifier.delegate, is(sameInstance(sut)));
     assertThat(sheetVerifier.cancelButtonTitle, is(@"Cancel"));
-    assertThat(sheetVerifier.otherButtonTitles, contains(@"Open in Safari", @"Copy link", nil));
+    assertThat(sheetVerifier.otherButtonTitles, contains(@"Open in Safari", @"Copy link", @"Separately added button", nil));
 }
 
 @end

@@ -31,6 +31,12 @@ NSString *const JMRMockAlertViewShowNotification = @"JMRMockAlertViewShowNotific
     return self;
 }
 
+- (NSInteger)addButtonWithTitle:(NSString *)title
+{
+    [self.otherButtonTitles addObject:title];
+    return self.otherButtonTitles.count;
+}
+
 - (void)show
 {
     [[NSNotificationCenter defaultCenter] postNotificationName:JMRMockAlertViewShowNotification
