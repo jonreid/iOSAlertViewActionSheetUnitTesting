@@ -18,7 +18,7 @@
 		0865D162174744EA00E583A0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0865D131174741AC00E583A0 /* Default.png */; };
 		0865D163174744ED00E583A0 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0865D133174741AC00E583A0 /* Default@2x.png */; };
 		0865D164174744F000E583A0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0865D135174741AC00E583A0 /* Default-568h@2x.png */; };
-		0865D1661747455500E583A0 /* ViewControllerTestPlainOCUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0865D1651747455500E583A0 /* ViewControllerTestPlainOCUnit.m */; };
+		0865D1661747455500E583A0 /* ViewControllerTestPlainXCTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0865D1651747455500E583A0 /* ViewControllerTestPlainXCTest.m */; };
 		0865D1A8174745DB00E583A0 /* JMRMockActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 0865D1A0174745DB00E583A0 /* JMRMockActionSheet.m */; };
 		0865D1A9174745DB00E583A0 /* JMRMockActionSheetVerifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 0865D1A2174745DB00E583A0 /* JMRMockActionSheetVerifier.m */; };
 		0865D1AA174745DB00E583A0 /* JMRMockAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0865D1A4174745DB00E583A0 /* JMRMockAlertView.m */; };
@@ -54,7 +54,7 @@
 		0865D142174741AC00E583A0 /* AlertViewActionSheetExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlertViewActionSheetExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0865D14B174741AC00E583A0 /* AlertViewActionSheetExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AlertViewActionSheetExampleTests-Info.plist"; sourceTree = "<group>"; };
 		0865D15A1747433F00E583A0 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
-		0865D1651747455500E583A0 /* ViewControllerTestPlainOCUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerTestPlainOCUnit.m; sourceTree = "<group>"; };
+		0865D1651747455500E583A0 /* ViewControllerTestPlainXCTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerTestPlainXCTest.m; sourceTree = "<group>"; };
 		0865D19F174745DB00E583A0 /* JMRMockActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMRMockActionSheet.h; sourceTree = "<group>"; };
 		0865D1A0174745DB00E583A0 /* JMRMockActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMRMockActionSheet.m; sourceTree = "<group>"; };
 		0865D1A1174745DB00E583A0 /* JMRMockActionSheetVerifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMRMockActionSheetVerifier.h; sourceTree = "<group>"; };
@@ -148,7 +148,7 @@
 		0865D149174741AC00E583A0 /* AlertViewActionSheetExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				0865D1651747455500E583A0 /* ViewControllerTestPlainOCUnit.m */,
+				0865D1651747455500E583A0 /* ViewControllerTestPlainXCTest.m */,
 				0865D1AD1747D23700E583A0 /* ViewControllerTestWithOCHamcrest.m */,
 				0865D19E174745DB00E583A0 /* TestSupport */,
 				0EEC9C6A1B647B2800C45956 /* OCHamcrest-4.1.1 */,
@@ -310,7 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0865D1661747455500E583A0 /* ViewControllerTestPlainOCUnit.m in Sources */,
+				0865D1661747455500E583A0 /* ViewControllerTestPlainXCTest.m in Sources */,
 				0865D1A8174745DB00E583A0 /* JMRMockActionSheet.m in Sources */,
 				0865D1A9174745DB00E583A0 /* JMRMockActionSheetVerifier.m in Sources */,
 				0865D1AA174745DB00E583A0 /* JMRMockAlertView.m in Sources */,

@@ -9,10 +9,10 @@
 #import "JMRMockAlertViewVerifier.h"
 
 
-@interface ViewControllerTestPlainOCUnit : XCTestCase
+@interface ViewControllerTestPlainXCTest : XCTestCase
 @end
 
-@implementation ViewControllerTestPlainOCUnit
+@implementation ViewControllerTestPlainXCTest
 {
     ViewController *sut;
 }
