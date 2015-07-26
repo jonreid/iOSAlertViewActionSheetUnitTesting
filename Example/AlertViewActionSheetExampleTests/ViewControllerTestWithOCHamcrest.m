@@ -57,7 +57,7 @@
     JMRMockAlertViewVerifier *alertVerifier = [[JMRMockAlertViewVerifier alloc] init];
     
     [sut showAlert:nil];
-    assertThatInt(alertVerifier.showCount, is(equalTo(@1)));
+    assertThat(@(alertVerifier.showCount), is(equalTo(@1)));
     assertThat(alertVerifier.title, is(@"Get Driving Directions"));
     assertThat(alertVerifier.message, is(@"Continue to the Maps app for driving directions?"));
     assertThat(alertVerifier.delegate, is(sameInstance(sut)));
@@ -89,7 +89,7 @@
     JMRMockActionSheetVerifier *sheetVerifier = [[JMRMockActionSheetVerifier alloc] init];
     
     [sut showActionSheet:nil];
-    assertThatInt(sheetVerifier.showCount, is(equalTo(@1)));
+    assertThat(@(sheetVerifier.showCount), is(equalTo(@1)));
     assertThat(sheetVerifier.parentView, is(sameInstance([sut view])));
     assertThat(sheetVerifier.title, is(@"http://qualitycoding.org"));;
     assertThat(sheetVerifier.delegate, is(sameInstance(sut)));
