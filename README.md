@@ -1,3 +1,5 @@
+*This repository is deprecated. Use [MockUIAlertViewActionSheet](https://github.com/jonreid/MockUIAlertViewActionSheet) instead. Thanks!*
+
 Unit testing alerts and action sheets
 =====================================
 
